@@ -140,7 +140,7 @@ The Notebook is created and let's run the notebook in the next section.
 
 This section is intended for beginners. If you're an expert, feel free to skip this section, and we hope you've completed the previous one.
 
-<details><summary>CLICK Me for detailed instructions</summary>
+<details><summary>CLICK me for detailed instructions</summary>
 
 1. Copy the below content in the first cell.
 ```
@@ -187,7 +187,7 @@ The Notebook is created and let's run the notebook in the next section.
 
 </details>
 
-## 4. Run the Jupyter Notebook
+## 4. Execute the Jupyter Notebook
 
 Let's execute the notebook.
 
@@ -198,7 +198,7 @@ Let's execute the notebook.
 
 <img src="images/image-22.png">
 
-### 4.2 Run notebook (For Experts)
+### 4.2 Execute Notebook (For Experts)
 
 This section is intended for experts. If you're new to notebooks, please skip this section and proceed to the next one.
 
@@ -208,11 +208,11 @@ This section is intended for experts. If you're new to notebooks, please skip th
 
 We have successfully executed the notebook by calling the IBM Granite model via ollama.
 
-### 4.3 Run notebook (For Beginners)
+### 4.3 Execute Notebook (For Beginners)
 
 This section is intended for beginners. If you're an expert, feel free to skip this section, and we hope you've completed the previous one.
 
-<details><summary>CLICK Me for detailed instructions</summary>
+<details><summary>CLICK ne for detailed instructions</summary>
 
 1. Place the cursor in the first cell 
 
@@ -263,7 +263,9 @@ You can close the environment by following the steps here.
 1. You can close the window by choosing `File > Shutdown` option from the menu.
 
     <img src="images/image-30.png">
+
 OR 
+
 2. Press `Ctrl + C` keys to stop the JupyterLab from the terminal window.
 
 ### 6.2 Deactivate Virtual Environment
