@@ -80,6 +80,8 @@ jupyter lab
 
 Let's create a Jupyter Notebook with Python script to access IBM Granite model.
 
+### 3.1 Create Notebook
+
 1. In the JupyterLab window, click on the + button in the top.
 
 <img src="images/image-11.png">
@@ -101,8 +103,11 @@ The notebook is saved in the given name.
 
 <img src="images/image-15.png">
 
+### 3.2 Insert Scripts into the Notebook (For Experts)
 
-6. If you know how to use notebooks, just copy the content below into four separate cells in the notebook and skip the next step. Otherwise, proceed to the next step.
+This section is intended for experts. If you're new to notebooks, please skip this section and proceed to the next one.
+
+1. Copy the content below into four separate cells in the notebook.
 
 ```
 !pip install langchain-ollama
@@ -123,12 +128,19 @@ prompt = "What is Kubernetes"
 response = model.invoke(prompt)
 print(response)
 ```
+
+2. Verify the notebook look like this.
+
 <img src="images/image-21.png">
 
-7. If you're new to notebooks, click below for detailed instructions
+The Notebook is created and let's run the notebook in the next section.
 
-<details><summary>CLICK ME</summary>
 
+### 3.3 Insert Scripts into the Notebook (For Beginners)
+
+This section is intended for beginners. If you're an expert, feel free to skip this section, and we hope you've completed the previous one.
+
+<details><summary>CLICK Me for detailed instructions</summary>
 
 1. Copy the below content in the first cell.
 ```
@@ -171,27 +183,36 @@ print(response)
 
 <img src="images/image-21.png">
 
-</details>
-
 The Notebook is created and let's run the notebook in the next section.
+
+</details>
 
 ## 4. Run the Jupyter Notebook
 
 Let's execute the notebook.
 
+
+### 4.1. Check Kernal
+
 1. Ensure the kernel is pointing to `Python 3 (ipykernel)` in the top right corner.
 
 <img src="images/image-22.png">
 
-2. If you know how to use notebooks, just run the four cells to see the output and skip the next step. Otherwise, proceed to the next step.
+### 4.2 Run notebook (For Experts)
+
+This section is intended for experts. If you're new to notebooks, please skip this section and proceed to the next one.
+
+1. Run all the four cells to see the output.
 
 <img src="images/image-28.png">
 
 We have successfully executed the notebook by calling the IBM Granite model via ollama.
 
-3. If you're new to notebooks, click below for detailed instructions
+### 4.3 Run notebook (For Beginners)
 
-<details><summary>CLICK ME</summary>
+This section is intended for beginners. If you're an expert, feel free to skip this section, and we hope you've completed the previous one.
+
+<details><summary>CLICK Me for detailed instructions</summary>
 
 1. Place the cursor in the first cell 
 
@@ -232,7 +253,6 @@ We have successfully executed the notebook by calling the IBM Granite model via 
 The same script is available as `sample.ipynb` notebook along with markup document [here](../files/sample.ipynb). You can copy and paste the notebook/content and execute it.
 
 <img src="images/image-29.png">
-
 
 ## 6. Closing the Apps
 
