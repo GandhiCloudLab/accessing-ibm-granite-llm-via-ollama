@@ -61,29 +61,26 @@ cd /Users/gandhi/GandhiMain/998-work
 ```
 python -m venv my-jupyter-env
 source my-jupyter-env/bin/activate
-
 ```
 
-2. Install jupyterlab using the below command
+3. Install jupyterlab using the below command
 ```
 pip install jupyterlab 
 ```
 
-3. Run jupyterlab using the below command
+4. Run jupyterlab using the below command
 
 ```
 jupyter lab 
 ```
  
-4. JupyterLab would get started and open up in a new browser window in the URL http://localhost:8888/lab/workspaces/auto-U
-
-It should show the Navigator window.
+5. JupyterLab will start and open in a new browser window at the URL http://localhost:8888/lab/workspaces/auto-U
 
 ## 3. Create Jupyter Notebook with Python script
 
 Let's create a Jupyter Notebook with Python script to access IBM Granite model.
 
-1. Click on the + button in the top.
+1. In the JupyterLab window, click on the + button in the top.
 
 <img src="images/image-11.png">
 
@@ -95,7 +92,7 @@ Let's create a Jupyter Notebook with Python script to access IBM Granite model.
 
 <img src="images/image-13.png">
 
-4. Enter the name.
+4. Enter the name for the notebook.
 5. Click `Rename` button
 
 <img src="images/image-14.png">
@@ -104,13 +101,42 @@ The notebook is saved in the given name.
 
 <img src="images/image-15.png">
 
-6. Copy the below content in the first cell.
+
+6. If you're familiar with notebooks, copy the content below into four separate cells in the notebook.
+
+```
+!pip install langchain-ollama
+```
+
+```
+model_id = "granite3-dense:2b"
+```
+
+```
+from langchain_ollama.llms import OllamaLLM
+model = OllamaLLM(model=model_id)
+```
+
+```
+prompt = "What is Kubernetes"
+
+response = model.invoke(prompt)
+print(response)
+```
+<img src="images/image-21.png">
+
+7. If you're new to notebooks, click below for detailed instructions
+
+<details><summary>CLICK ME</summary>
+
+
+1. Copy the below content in the first cell.
 ```
 !pip install langchain-ollama
 ```
 <img src="images/image-16.png">
 
-7. Click on + button in the Notebook 
+2. Click on + button in the Notebook 
 
 <img src="images/image-17.png">
 
@@ -119,7 +145,7 @@ you get the second cell.
 <img src="images/image-18.png">
 
 
-8. Copy the below content in the second cell.
+3. Copy the below content in the second cell.
 
 ```
 model_id = "granite3-dense:2b"
@@ -127,17 +153,15 @@ model_id = "granite3-dense:2b"
 
 <img src="images/image-19.png">
 
-6. Click on + button in the Notebook and copy the below content in the third cell.
+4. Click on + button in the Notebook and copy the below content in the third cell.
 ```
 from langchain_ollama.llms import OllamaLLM
-
 model = OllamaLLM(model=model_id)
-
 ```
 <img src="images/image-20.png">
 
 
-7. Click on + button in the Notebook and copy the below content in the cell.
+5. Click on + button in the Notebook and copy the below content in the fourth cell.
 ```
 prompt = "What is Kubernetes"
 
@@ -147,9 +171,11 @@ print(response)
 
 <img src="images/image-21.png">
 
-The Notebook is created and lets run the notebook in the next section.
+</details>
 
-## 4. Create Jupyter Notebook with Python script
+The Notebook is created and let's run the notebook in the next section.
+
+## 4. Run the Jupyter Notebook
 
 Let's execute the notebook.
 
@@ -157,9 +183,17 @@ Let's execute the notebook.
 
 <img src="images/image-22.png">
 
-2. Place the cursor in the first cell 
+6. If you're familiar with using notebooks, simply run the four cells to view the output.
 
-3. Click on the `Run the cell and advance` button.
+<img src="images/image-28.png">
+
+7. If you're new to notebooks, click below for detailed instructions
+
+<details><summary>CLICK ME</summary>
+
+1. Place the cursor in the first cell 
+
+2. Click on the `Run the cell and advance` button.
 
 This would install the `langchain-ollama`
 
@@ -169,46 +203,46 @@ Here is the output of that.
 
 <img src="images/image-24.png">
 
-4. Similarly run the second cell.
+3. Similarly run the second cell.
 
 This will choose the model_id 
 <img src="images/image-25.png">
 
-5. Run the third cell.
+4. Run the third cell.
 
 This will create model object instance.
 
 <img src="images/image-26.png">
 
-6. Run the fourth cell.
+5. Run the fourth cell.
 
 This will call the IBM Granite model and print the response.
 
 <img src="images/image-27.png">
 
-We have successfully execute the notebook by calling the IBM Granite model via the ollama.
+We have successfully executed the notebook by calling the IBM Granite model via ollama.
 
 <img src="images/image-28.png">
-
+</details>
 
 ## 5. Sample Notebook
 
-The same script is available as a sample notebook along with markup document [here](../files/sample.ipynb). You can copy and paste the notebook/content and execute it.
+The same script is available as `sample.ipynb` notebook along with markup document [here](../files/sample.ipynb). You can copy and paste the notebook/content and execute it.
 
 <img src="images/image-29.png">
 
 
 ## 6. Closing the Apps
 
-Once everything is completed. you can close the environment by following the steps here.
+You can close the environment by following the steps here.
 
 ### 6.1 Close JupyterLab
 
 1. You can close the window by choosing `File > Shutdown` option from the menu.
 
     <img src="images/image-30.png">
-or 
-    Press `Ctrl + C` keys to stop the JupyterLab from the terminal window.
+OR 
+2. Press `Ctrl + C` keys to stop the JupyterLab from the terminal window.
 
 ### 6.2 Deactivate Virtual Environment
 
@@ -230,7 +264,7 @@ OR
 ps aux | grep ollama
 ```
 
-3. Run the below command to kill the Ollama app. process.
+3. Run the below command to kill the Ollama app process.
 
 ```
 kill -9 <PID>
