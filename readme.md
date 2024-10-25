@@ -102,7 +102,7 @@ The notebook is saved in the given name.
 <img src="images/image-15.png">
 
 
-6. If you're familiar with notebooks, copy the content below into four separate cells in the notebook.
+6. If you know how to use notebooks, just copy the content below into four separate cells in the notebook and skip the next step. Otherwise, proceed to the next step.
 
 ```
 !pip install langchain-ollama
@@ -183,11 +183,13 @@ Let's execute the notebook.
 
 <img src="images/image-22.png">
 
-6. If you're familiar with using notebooks, simply run the four cells to view the output.
+2. If you know how to use notebooks, just run the four cells to see the output and skip the next step. Otherwise, proceed to the next step.
 
 <img src="images/image-28.png">
 
-7. If you're new to notebooks, click below for detailed instructions
+We have successfully executed the notebook by calling the IBM Granite model via ollama.
+
+3. If you're new to notebooks, click below for detailed instructions
 
 <details><summary>CLICK ME</summary>
 
