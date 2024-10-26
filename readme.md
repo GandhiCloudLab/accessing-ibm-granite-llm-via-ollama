@@ -2,6 +2,8 @@
 
 This document explores how to access the IBM Granite model using Ollama. Let's demonstrate this process using both Jupyter Notebook and a Python script.
 
+<img src="images/arch.png">
+
 ## 1. Setup Ollama
 
 Ollama is a tool designed to run and interact with large language models (LLMs) locally on your computer, rather than in the cloud. It provides a streamlined interface for deploying and managing models like IBM Granite or other compatible LLMs directly on local hardware.
